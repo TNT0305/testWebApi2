@@ -1,15 +1,15 @@
 # testWebApi2
 
+## Description
+This is a project space to work out a good development workflow for a C++ shared library using CMake and consuming it from a .NET 6 context.  Inspired by my own SO question, [here](https://stackoverflow.com/questions/72816655/cross-platform-dotnet-6-and-c).
+
+This is a straw-man github repo and comments, suggestions, and PRs are welcome.
+
 ## TL;DR
 - Build a C++ shared libary using cmake in vs2022 for linux and windows
 - Wrap the native shared library in a dotnet class libary using P/Invoke
 - Consume the wrapper library in a dotnet webApi project
 - Observe the webapi project calling methods from the C++ shared library in the browser
-
-## Description
-This is a project space to work out a good development workflow for a C++ shared library using CMake and consuming it from a .NET 6 context.  Inspired by my own SO question, [here](https://stackoverflow.com/questions/72816655/cross-platform-dotnet-6-and-c).
-
-This is a straw-man github repo and comments, suggestions, and PRs are welcome.
 
 ### Build steps
 On the initial commit, the workflow is a bit cumbersome.  
