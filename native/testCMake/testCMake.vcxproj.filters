@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\TroyBerg\source\repos\testWebApi2\TestWrapper\native\testCMake\testCMake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\TroyBerg\source\repos\testWebApi2\TestWrapper\native\testCMake\testCMake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\TroyBerg\source\repos\testWebApi2\TestWrapper\native\testCMake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{08660231-0A51-34C4-BE4E-CE6C089704C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B2EBE6B0-A8CD-3035-8B5D-C126D584C184}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

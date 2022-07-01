@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+      <!-- Identifier that must be unique within the hosting gallery -->
+      <id>MyExample.TestWrapper</id>
+
+      <!-- Package version number that is used when resolving dependencies -->
+      <version>0.0.3</version>
+
+      <!-- Authors contain text that appears directly on the gallery -->
+      <authors>TroyB</authors>
+
+      <!-- 
+          Owners are typically nuget.org identities that allow gallery
+          users to easily find other packages by the same owners.  
+      -->
+      <owners>tberg</owners>
+        
+        <!-- Project URL provides a link for the gallery -->
+      <projectUrl>https://stackoverflow.com/questions/72816655/cross-platform-dotnet-6-and-c</projectUrl>
+
+        <!-- License information is displayed on the gallery -->
+      <license type="expression">MIT</license>
+        
+
+      <!-- Icon is used in Visual Studio's package manager UI -->
+      <!--<icon>icon.png</icon>-->
+      <!-- 
+          If true, this value prompts the user to accept the license when
+          installing the package. 
+      -->
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+      <!-- Any details about this particular release -->
+      <releaseNotes>Trying this out</releaseNotes>
+
+      <!-- 
+          The description can be used in package manager UI. Note that the
+          nuget.org gallery uses information you add in the portal. 
+      -->
+      <description>A test wrapper for linux/win x64 native library wrapper</description>
+
+      <!-- Copyright information -->
+      <copyright>Copyright ©2022 TroyB</copyright>
+
+      <!-- Tags appear in the gallery and can be used for tag searches -->
+      <tags></tags>
+
+      <!-- Dependencies are automatically installed when the package is installed -->
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="../TestWrapper/bin/x64/Release/net6.0/TestWrapper.dll" target="lib\net6.0"/>
+    <file src="../TestWrapper/bin/x64/Release/net6.0/TestWrapper.pdb" target="lib\net6.0"/>
+    <!--Path to x64 version-->
+    <file src="../native/out/build/x64-release/testSharedLibrary/testSharedLibrary.dll" target="runtimes\win-x64\native" />
+    <!--<file src="../TestWrapper/bin/x64/Release/net6.0/TestWrapper.dll" target="lib\win-x64\native"/>-->
+    <!--<file src="bin\x64\Release\netstandard2.0\Foo.dll" target="runtimes\win-x64\native" />-->
+
+    <!--Path to x64 builded ExternalLib(for linux) and Foo(same as windows)-->
+    <file src="../native/out/linux/release/libtestSharedLibrary.so" target="runtimes\linux-x64\native" />
+    <!--<file src="bin\x64\Release\netstandard2.0\Foo.dll" target="runtimes\linux-x64\native" />-->
+  </files>
+</package>

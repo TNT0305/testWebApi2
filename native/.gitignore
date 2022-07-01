@@ -1,0 +1,8 @@
+# Visual Studio2022 2019 cache/options directory
+.vs/
+
+# CMake generated files
+*.cmake
+*.make
+CMakeFiles/
+out/

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <Target Name="Pack nuget package" AfterTargets="Build">
+    <Message Importance="high" Text="Packing TestWrapper into nuget package" />
+    <Exec Command="dotnet pack --no-build -c:Release -p:NuspecFile=TestWrapper.nuspec --output ../nupkgs"/>
+  </Target>
+</Project>
