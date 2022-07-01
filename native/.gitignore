@@ -4,5 +4,7 @@
 # CMake generated files
 *.cmake
 *.make
+*.vcxproj
+*.vcxproj.filters
 CMakeFiles/
 out/
